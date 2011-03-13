@@ -50,7 +50,7 @@
 
       screen.mousedown(function(e) {
         e.preventDefault();
-        var img = rand_images[ Math.floor( Math.random() * rand_images.length ) ];
+        var img = rand_images[ Math.floor( Math.random() * rand_images.length ) ]; // floor rounds down
         console.log(img);
         screen.attr('src', img);
       });
